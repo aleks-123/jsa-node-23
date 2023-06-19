@@ -237,10 +237,51 @@ const zbirNaProsek = studenti.reduce((sum, s) => sum + s.prosek, 0);
 console.log(zbirNaProsek);
 
 //!
-const array1 = [1, 2, 3];
-const array2 = [1, 2, 3];
+// const array1 = [1, 2, 3];
+// const array2 = [1, 2, 3];
 
-console.log(JSON.stringify(array1) === JSON.stringify(array2));
+// console.log(JSON.stringify(array1) === JSON.stringify(array2));
+
+//! Kopiranje na array
+// spread operator
+const array1 = [2, 4, 6, 8, 32];
+const array2 = [24, 214, 4, 5, 6];
+const array3 = array1.concat(array2); //nacin1
+const array4 = [...array1, ...array2];
+console.log(array4);
+
+//! Destruction on Arrays
+const arr1 = [1, 3, 7];
+const [a, b, element3] = arr1;
+console.log(element3);
+
+const arr2 = [50, 100, 200, 300, 500, 1000, 1500];
+const [x, z, ...y] = arr2;
+console.log(x);
+console.log(z);
+console.log(y);
+
+//! Destruction on Objects
+const myObject = { produkt: "Smoki", cena: 13 };
+const { cena, produkt } = myObject;
+console.log(cena, produkt);
+
+//! Kopiranje na Objekt
+const obj1 = {
+  item1: "eden",
+  item2: "dva",
+};
+
+const obj2 = {
+  item3: "tri",
+  produkt: "osum",
+};
+
+const obj3 = { ...obj1, ...obj2, item3: "Chetiri" };
+console.log(obj3);
+
+const obj4 = { ...obj1, item2: "item2" };
+console.log(obj4);
 
 //? Domasna
 //? 1. Site studenti od Skopje chie ime zavrshuva na a i imaat prosek nad 7, podredeni po ime(rastecki)

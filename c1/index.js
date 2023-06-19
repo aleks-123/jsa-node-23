@@ -1,4 +1,7 @@
 console.log("Welcome to Node.js");
+const domasna = require("../c3/domasna");
+
+console.log(domasna.checkNumber(5));
 
 const broj1 = 2;
 const broj2 = 4;

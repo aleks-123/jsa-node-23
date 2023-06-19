@@ -7,6 +7,7 @@
 //?vtor nacin na povikuvanje na kolakni moduli so destruction
 const { sobiranje, odzemanje, delenje, mnozenje } = require("./kalkulator.js");
 const converter = require("./converter.js");
+const domasna = require("./domasna.js");
 //! 3. THIRD-PARTY
 //*mongoose,express,dotenv,ejs,morgan..
 //? prv nacin
@@ -16,6 +17,8 @@ console.log(sobiranje(2, 4));
 converter.textStats(
   "Nie sme studenti vo Semos Akademija, uchime full stack programinja. I taka nataka"
 );
+
+console.log(domasna.checkNumber(2));
 
 //? Za domasna da se dodade uste eden modul so ime domasna.js
 //? Koj kje ima funkcija da promeni faregajt vo celzius i obrantno
