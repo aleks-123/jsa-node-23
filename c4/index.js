@@ -136,7 +136,7 @@ const fileRead = (filename) => {
   });
 };
 
-const main = async () => {
+const funkcija = async () => {
   try {
     await fileWrite("data1.txt", "Asynhron zapis od promis");
     await fileWrite("data2.txt", "Asynhron zapis od promis 2");
@@ -147,4 +147,15 @@ const main = async () => {
   }
 };
 
-main();
+funkcija();
+
+// (async () => {
+//   try {
+//     await fileWrite("data1.txt", "Asynhron zapis od promis");
+//     await fileWrite("data2.txt", "Asynhron zapis od promis 2");
+//     const rezultat = await fileRead("super.txt");
+//     console.log(rezultat);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// })();

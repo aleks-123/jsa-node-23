@@ -21,14 +21,14 @@
 
 // console.log(`Proizvodot e ${prizvodot}`);
 
-// // 3. Fat-Arrow function
+// 3. Fat-Arrow function
 // const razlika = (a, b) => a - b;
 
 // console.log(`Razlikata e ${razlika(6, 2)}`);
 
-// // this
+// this
 
-// // 4. Методи во објекти во ЈаваСкрипт
+// 4. Методи во објекти во ЈаваСкрипт
 // const ucenik = {
 //   ime: "Trajan",
 //   pozdrav: function () {
@@ -38,9 +38,9 @@
 
 // ucenik.pozdrav();
 
-// // 5. IIFFE Immediately Invoked Function Expressions
-// // ova se koristi da se odeli od drugiot kod, i drugiot kod da ne moze da modificira vo ovaa IIFFE funkcija
-// // i ova se izvrsuva na pocetok od aplikacijata
+// 5. IIFFE Immediately Invoked Function Expressions
+// ova se koristi da se odeli od drugiot kod, i drugiot kod da ne moze da modificira vo ovaa IIFFE funkcija
+// i ova se izvrsuva na pocetok od aplikacijata
 // (function () {
 //   console.log("Ovde kje se izvrsi funkcijata");
 // })();
@@ -215,6 +215,13 @@ const studenti = [
   { ime: "Damjan", prosek: 9.1, grad: "Kumanovo" },
   { ime: "Sandra", prosek: 9.2, grad: "Ohrid" },
 ];
+
+const siteODKumanov = studenti.filter((student) => {
+  return student.grad == "Kumanovo" && student.prosek > 9;
+});
+
+console.log(siteODKumanov);
+
 //todo: Da gi izlistame site iminja na studenti
 // for (let i = 0; i < studenti.length; i++) {
 //   console.log(studenti[i].ime);

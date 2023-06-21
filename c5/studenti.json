@@ -1,0 +1,32 @@
+[
+  {
+    "ime": "Gjoko",
+    "grad": "Skopje",
+    "prosek": 8.9
+  },
+  {
+    "ime": "Martin",
+    "grad": "Gostivar",
+    "prosek": 9.9
+  },
+  {
+    "ime": "Risto",
+    "grad": "Probistip",
+    "prosek": 10
+  },
+  {
+    "ime": "Cacko",
+    "grad": "Kavadari",
+    "prosek": 7
+  },
+  {
+    "ime": "Blazo",
+    "grad": "Kumanovo",
+    "prosek": 8
+  },
+  {
+    "ime": "Tosho",
+    "grad": "Radovish",
+    "prosek": 9
+  }
+]
