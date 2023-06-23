@@ -60,3 +60,5 @@ server.listen(10000, (err) => {
 // /ime/julija
 
 // parno: da, karakteri 5, soglaski: 2, samoglaski
+
+//! http://127.0.0.1:10000/
