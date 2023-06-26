@@ -19,6 +19,8 @@ const handler = (req, res) => {
   // console.log(req.headers);
   // /sobiranje/2/5
 
+  console.log(req.url);
+
   const [_, op, a, b] = req.url.split("/");
   // ["", "sobiranje", "2", "5"]
   // split methodata go deli stringot prema parametarto sto e vnatre vo /
