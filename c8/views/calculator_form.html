@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>форма</title>
+  </head>
+  <body>
+    <form action="/calculator" method="post">
+      <input type="number" name="a" placeholder="a" required />
+      <select name="op" id="op">
+        <option value="sobiranje">+</option>
+        <option value="odzemanje">-</option>
+        <option value="delenje">/</option>
+        <option value="mnozenje">*</option>
+      </select>
+      <input type="text" name="b" placeholder="b" required />
+      <button type="submit">Калкулирај</button>
+    </form>
+  </body>
+</html>
