@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <table border="3" width="100%">
+      <tr>
+        <th>IME</th>
+        <th>PREZIME</th>
+        <th>PROSEK</th>
+      </tr>
+      <% data.forEach((student, i) => { %>
+      <tr>
+        <td><%=student.ime %></td>
+        <td><%=student.prezime %></td>
+        <td><%=student.prosek %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
